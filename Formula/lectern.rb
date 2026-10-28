@@ -10,6 +10,9 @@ class Lectern < Formula
   uses_from_macos "swift" => :build
 
   def install
+    # Homebrew picks the SDK of the running macOS, which can be older than the Swift compiler's own;
+    # the Observation macros of a newer compiler then do not match it. Swift finds its own SDK instead.
+    ENV.delete "SDKROOT"
     # SwiftPM's own sandbox cannot start inside Homebrew's
     ENV["LECTERN_SWIFT_FLAGS"] = "--disable-sandbox"
     system "scripts/bundle.sh"
