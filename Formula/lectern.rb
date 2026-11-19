@@ -1,8 +1,8 @@
 class Lectern < Formula
   desc "Records lectures on a Mac and turns them into notes, questions and dates"
   homepage "https://github.com/katex35/lectern"
-  url "https://github.com/katex35/lectern/archive/refs/tags/v0.2.2.tar.gz"
-  sha256 "99ae97e9731329fc21476b3df7c238849e386f33f218134692679c62ab660a8d"
+  url "https://github.com/katex35/lectern/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "1d6306ee9f41cd1bd2253264130d67709f0d3abcb3b62cbe9eb7a81b4699276a"
   license "MIT"
   head "https://github.com/katex35/lectern.git", branch: "main"
 
